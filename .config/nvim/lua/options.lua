@@ -1,5 +1,12 @@
 local opt = vim.opt
 
+-- Clipboard
+if vim.env.SSH_TTY or vim.env.SSH_CONNECTION then
+    vim.g.clipboard = "osc52"
+end
+
+vim.opt.clipboard = "unnamedplus"
+
 -- Line numbers
 opt.number = true
 opt.relativenumber = false
@@ -32,7 +39,6 @@ opt.splitright = true
 
 -- Misc
 opt.mouse = "a"
-opt.clipboard = "unnamedplus"
 opt.undofile = true
 opt.swapfile = false
 opt.updatetime = 250
