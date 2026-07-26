@@ -15,6 +15,7 @@ return {
                 "~/.config/*",
                 "~/.ssh",
                 "/etc/nginx/",
+                "/etc/wireguard/",
             },
 
             picker = {

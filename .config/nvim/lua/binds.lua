@@ -9,9 +9,16 @@ vim.keymap.set(
 
 vim.keymap.set(
     "n",
+    "<leader>R",
+    "<cmd>SudaRead<CR>",
+    { desc = "Read" }
+)
+
+vim.keymap.set(
+    "n",
     "<leader>W",
     "<cmd>SudaWrite<CR>",
-    { desc = "SudaWrite" }
+    { desc = "Write" }
 )
 
 vim.api.nvim_create_autocmd("User", {
