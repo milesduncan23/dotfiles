@@ -30,3 +30,6 @@ setopt AUTO_CD
 # Globbing
 setopt EXTENDED_GLOB
 setopt NULL_GLOB
+
+# Fastfetch on source
+fastfetch
