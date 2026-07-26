@@ -1,16 +1,6 @@
 MACHINE="$(hostname -s)"
 
 # -----------------------------
-# Plugins
-# -----------------------------
-
-# Autosuggestions
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Syntax highlighting -- keep this near the end of .zshrc
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# -----------------------------
 # Aliases
 # -----------------------------
 

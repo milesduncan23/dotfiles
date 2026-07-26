@@ -9,3 +9,4 @@ machine="$(hostname -s)"
 
 source "$CONFIG/common.zsh"
 source "$CONFIG/alias.zsh"
+source "$CONFIG/plugins.zsh"
