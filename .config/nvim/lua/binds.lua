@@ -7,6 +7,13 @@ vim.keymap.set(
     { desc = "Projects" }
 )
 
+vim.keymap.set(
+    "n",
+    "<leader>W",
+    "<cmd>SudaWrite<CR>",
+    { desc = "SudaWrite" }
+)
+
 vim.api.nvim_create_autocmd("User", {
     pattern = "SessionLoadPost",
     callback = function()
