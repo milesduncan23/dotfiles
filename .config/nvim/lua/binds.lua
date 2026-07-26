@@ -7,12 +7,13 @@ vim.keymap.set(
     { desc = "Projects" }
 )
 
-vim.keymap.set(
-    "n",
-    "<leader>R",
-    "<cmd>SudaRead<CR>",
-    { desc = "Read" }
-)
+vim.keymap.set("n", "R", function()
+    if vim.bo.buftype ~= "" then
+        return
+    end
+
+    vim.cmd("SudaRead")
+end, { desc = "Read file with sudo" })
 
 vim.keymap.set(
     "n",
