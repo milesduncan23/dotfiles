@@ -14,6 +14,7 @@ return {
                 "~/.projects/*",
                 "~/.config/*",
                 "~/.ssh",
+                "/etc/nginx/",
             },
 
             picker = {
