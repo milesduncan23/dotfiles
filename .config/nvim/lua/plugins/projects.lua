@@ -4,7 +4,10 @@ return {
 
         dependencies = {
             "nvim-lua/plenary.nvim",
-            "nvim-telescope/telescope.nvim",
+            {
+                "nvim-telescope/telescope.nvim",
+                tag = "0.1.8",
+            },
             "Shatur/neovim-session-manager",
         },
 

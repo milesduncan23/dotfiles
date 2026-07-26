@@ -4,8 +4,8 @@ CONFIG="$HOME/.config/zsh"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 machine="$(hostname -s)"
-[[ -f "$CONFIG/${machine}.zsh" ]] &&
-    source "$CONFIG/${machine}.zsh"
+[[ -f "$CONFIG/${machine}/local.zsh" ]] &&
+    source "$CONFIG/${machine}/local.zsh"
 
 source "$CONFIG/common.zsh"
 source "$CONFIG/alias.zsh"
