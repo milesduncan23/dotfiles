@@ -30,3 +30,17 @@ setopt AUTO_CD
 # Globbing
 setopt EXTENDED_GLOB
 setopt NULL_GLOB
+
+# -----------------------------
+# Zsh completion system
+# -----------------------------
+
+autoload -Uz compinit
+compinit
+
+# Completion behavior
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' verbose yes
