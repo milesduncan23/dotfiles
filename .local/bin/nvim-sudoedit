@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /etc/ssh || exit 1
+exec nvim "$@"

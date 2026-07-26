@@ -18,6 +18,7 @@ PROMPT='%F{blue}%n@%m%f %F{green}%~%f %# '
 
 # Environment variables
 export PATH="$HOME/.local/bin:$PATH"
+export SUDO_EDITOR="$HOME/.local/bin/nvim-sudoedit"
 export EDITOR=nvim
 export VISUAL=nvim
 
