@@ -1,5 +1,7 @@
 MACHINE="$(hostname -s)"
 
+export PATH="$HOME/.local/bin:$PATH"
+
 # -----------------------------
 # Aliases
 # -----------------------------
@@ -8,22 +10,7 @@ MACHINE="$(hostname -s)"
 alias ts-on='sudo systemctl start tailscaled && sudo tailscale up'
 alias ts-off='sudo tailscale down && sudo systemctl stop tailscaled'
 
-# LLM Aliases
-LLM_DIR="$HOME/Applications/llm"
-
-alias llm='cd -- "$LLM_DIR"'
-
-llm-on() (
-        cd -- "$LLM_DIR"
-        sudo systemctl start docker.service
-        docker compose up -d
-)
-
-llm-off() (
-        cd -- "$LLM_DIR"
-        docker compose down
-        sudo systemctl stop docker.socket docker.service containerd.service
-)
+alias eth='sudo ethtool enp72s0u2c2'
 
 # -----------------------------
 # CUPS printer stack controls
@@ -80,8 +67,3 @@ cups-status() {
 
 # Set func path
 fpath=("$HOME/.config/zsh/$MACHINE/zfunc" $fpath)
-
-# Conda completion
-if [[ -r "$HOME/Applications/anaconda3/etc/profile.d/conda.sh" ]]; then
-    source "$HOME/Applications/anaconda3/etc/profile.d/conda.sh"
-fi

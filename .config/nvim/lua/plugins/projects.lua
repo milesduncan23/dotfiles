@@ -13,6 +13,7 @@ return {
             projects = {
                 "~/.projects/*",
                 "~/.config/*",
+                "~/.local",
                 "~/.ssh",
                 "/etc/nginx/",
                 "/etc/wireguard/",
