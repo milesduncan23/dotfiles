@@ -7,9 +7,6 @@ PROMPT='%F{blue}%n@%m%f %F{green}%~%f %# '
 export EDITOR=nvim
 export VISUAL=nvim
 
-# Fastfetch on source
-fastfetch
-
 # -----------------------------
 # Opts
 # -----------------------------

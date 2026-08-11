@@ -15,3 +15,6 @@ machine="$(hostname -s)"
     source "$CONFIG/${machine}/local.zsh"
 
 source "$CONFIG/plugins.zsh"
+
+# Fetch on source
+unifetch

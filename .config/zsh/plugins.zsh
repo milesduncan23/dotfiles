@@ -5,11 +5,11 @@
 # Autosuggestions
 source "$HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
-# Syntax highlighting -- keep this near the end of .zshrc
+# Syntax Highlighting
 source "$HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # -----------------------------
-# Zsh completion system
+# Zsh Completion System
 # -----------------------------
 
 autoload -Uz compinit

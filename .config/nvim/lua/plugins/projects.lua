@@ -6,7 +6,6 @@ return {
             "nvim-lua/plenary.nvim",
             "nvim-telescope/telescope.nvim",
             "Shatur/neovim-session-manager",
-            "lambdalisue/vim-suda",
         },
 
         opts = {

@@ -10,6 +10,10 @@ export PATH="$HOME/.local/bin:$PATH"
 alias ts-on='sudo systemctl start tailscaled && sudo tailscale up'
 alias ts-off='sudo tailscale down && sudo systemctl stop tailscaled'
 
+alias bt-on='sudo systemctl start bluetooth && { blueman-applet >/dev/null 2>&1 &!; }'
+alias bt-off='pkill -x blueman-applet 2>/dev/null; sudo systemctl stop bluetooth'
+
+# Temporary one-shot fix for the ethernet adapter
 alias eth='sudo ethtool enp72s0u2c2'
 
 # -----------------------------
