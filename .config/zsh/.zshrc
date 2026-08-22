@@ -2,6 +2,7 @@
 
 typeset -U path PATH
 CONFIG="$HOME/.config/zsh"
+MACHINE="$(hostname -s)"
 
 # SSH Agent
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
@@ -10,11 +11,7 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 source "$CONFIG/common.zsh"
 source "$CONFIG/alias.zsh"
 
-machine="$(hostname -s)"
-[[ -f "$CONFIG/${machine}/local.zsh" ]] &&
-    source "$CONFIG/${machine}/local.zsh"
+[[ -f "$CONFIG/profiles/${MACHINE}/local.zsh" ]] &&
+    source "$CONFIG/profiles/${MACHINE}/local.zsh"
 
 source "$CONFIG/plugins.zsh"
-
-# Fetch on source
-unifetch

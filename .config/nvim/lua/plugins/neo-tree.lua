@@ -31,9 +31,5 @@ return {
                 width = 30,
             },
         },
-
-        config = function()
-            require("neo-tree").setup({})
-        end,
     },
 }
