@@ -4,7 +4,7 @@ export EDITOR=/opt/nvim-linux-x86_64/bin/nvim
 export VISUAL=/opt/nvim-linux-x86_64/bin/nvim
 
 # Vaultwarden
-alias vw='sudo docker compose -f /srv/vaultwarden/compose.yaml ps'
+alias vw='sudo docker compose -f /srv/vaultwarden/compose.yaml'
 
 vw-on() (
         sudo systemctl start docker.service
