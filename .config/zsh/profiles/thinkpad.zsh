@@ -1,5 +1,5 @@
 export PATH="$HOME/.local/bin:$PATH"
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"
 
 export QSYS_ROOTDIR="/home/miles/.altera_lite/25.1std/quartus/sopc_builder/bin"
 
