@@ -13,7 +13,7 @@ source "$HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlightin
 # -----------------------------
 
 autoload -Uz compinit
-compinit
+compinit -d "$ZDOTDIR/.local/.zcompdump"
 
 # Completion behavior
 zstyle ':completion:*' menu select
