@@ -71,7 +71,7 @@ cups-status() {
 # -----------------------------
 
 # Set func path
-fpath=("$HOME/.config/zsh/$MACHINE/zfunc" $fpath)
+fpath=("$HOME/.config/zsh/.local/zfunc" $fpath)
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

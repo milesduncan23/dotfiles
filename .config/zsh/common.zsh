@@ -9,7 +9,7 @@ export VISUAL=nvim
 # -----------------------------
 
 # History
-HISTFILE="$HOME/.config/zsh/profiles/$MACHINE/.history"
+HISTFILE="$HOME/.config/zsh/.local/.history"
 HISTSIZE=50000
 SAVEHIST=50000
 
