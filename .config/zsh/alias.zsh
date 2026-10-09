@@ -4,5 +4,12 @@ alias ll='ls -lah'
 alias grep='grep --color=auto'
 alias cls='clear'
 
-alias awake='systemd-inhibit --what=idle:sleep --mode=block --why="User Sleep Inhibit" sleep infinity'
-alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+dots-pull() (
+        dots pull origin main || return
+        dots submodule update --init --recursive
+)
+
+dots-check() (
+        dots fetch -q origin
+        dots log --oneline main..origin/main
+)
