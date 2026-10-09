@@ -4,12 +4,4 @@ alias ll='ls -lah'
 alias grep='grep --color=auto'
 alias cls='clear'
 
-dots-pull() (
-        dots pull origin main || return
-        dots submodule update --init --recursive
-)
-
-dots-check() (
-        dots fetch -q origin
-        dots log --oneline main..origin/main
-)
+alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'.
