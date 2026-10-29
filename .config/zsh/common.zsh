@@ -3,6 +3,7 @@ PROMPT='%F{blue}%n@%m%f %F{green}%~%f %# '
 # Environment variables
 export EDITOR=nvim
 export VISUAL=nvim
+export SYSTEMD_EDITOR=nvim
 
 # -----------------------------
 # Opts
