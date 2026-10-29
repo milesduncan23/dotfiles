@@ -2,3 +2,4 @@
 export PATH="/opt/nvim-linux-x86_64/bin:$PATH"
 export EDITOR=/opt/nvim-linux-x86_64/bin/nvim
 export VISUAL=/opt/nvim-linux-x86_64/bin/nvim
+export SYSTEMD_EDITOR=/opt/nvim-linux-x86_64/bin/nvim
