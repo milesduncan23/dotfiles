@@ -21,12 +21,3 @@ mkdir -p "$HOME/.config/zsh/.local"
 printf 'export PROFILE="server"\n' > "$HOME/.config/zsh/.local/profile.zsh"
 
 dots pull
-
-# ================
-# nvim install
-# ================
-
-cd /tmp
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
-sudo rm -rf /opt/nvim-linux-x86_64
-sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
